@@ -4,7 +4,7 @@ class Patient:
     def __init__(self, name, age, diagnosis, contact):
         self.name = name
         self.age = age
-        self.diagnosis = Diagnosis
+        self.diagnosis = diagnosis
         self.contact = contact
         self.admission_time = datetime.now()
 
