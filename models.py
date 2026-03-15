@@ -1,7 +1,7 @@
 from datetime import datetime
 
 class Patient:
-    def __init__(self, name, age, Diagnosis, contact):
+    def __init__(self, name, age, diagnosis, contact):
         self.name = name
         self.age = age
         self.diagnosis = Diagnosis
@@ -9,4 +9,4 @@ class Patient:
         self.admission_time = datetime.now()
 
     def display(self):
-        return f"{self.name} - {self.illness}"
+        return f"{self.name} - {self.diagnosis}"
