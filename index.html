@@ -20,7 +20,8 @@
 <tr>
 <th>Name</th>
 <th>Age</th>
-<th>Illness</th>
+<th>Diagnosis</th>
+<th>Contact</th>
 </tr>
 
 {% for patient in patients %}
@@ -28,7 +29,8 @@
 <tr>
 <td>{{patient.name}}</td>
 <td>{{patient.age}}</td>
-<td>{{patient.illness}}</td>
+<td>{{patient.diagnosis}}</td>
+<td>{{patient.contact}}</td>
 </tr>
 
 {% endfor %}
@@ -41,7 +43,7 @@
 
 {% for patient in recent %}
 
-<li>{{patient.name}} - {{patient.illness}}</li>
+<li>{{patient.name}} - {{patient.diagnosis}}</li>
 
 {% endfor %}
 
