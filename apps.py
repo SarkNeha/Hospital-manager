@@ -18,9 +18,10 @@ def add_patient_page():
 
         name = request.form["name"]
         age = request.form["age"]
-        illness = request.form["illness"]
+        diagnosis = request.form["diagnosis"]
+        contact = request.form["contact"]
 
-        new_patient = Patient(name, age, illness)
+        new_patient = Patient(name, age, diagnosis, contact="N/A")
         add_patient(new_patient)
 
         return redirect("/")
